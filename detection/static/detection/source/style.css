@@ -1,0 +1,70 @@
+* {
+    padding: 10;
+    margin: 10;
+}
+
+body {
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    text-align: center;
+    /*height: 200vh;*/
+    /*height: 100%;*/
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.h1_page {
+    font-size: 50px;
+}
+
+.video-frame {
+    display: inline-block;
+    margin: 10px;
+}
+
+.ip-input {
+    margin-top: 10px;
+}
+
+.table-container {
+    /*display: flex;*/
+    width: 100%;
+    /*justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;*/
+}
+
+.table-coordinate{
+    width: 100%; /* Độ rộng bảng sẽ tự động điều chỉnh theo kích thước màn hình */
+}
+
+.td-coordinate{
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#customAlert {
+    /*background-color: rgba(129, 114, 114, 0.5);
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;*/
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}

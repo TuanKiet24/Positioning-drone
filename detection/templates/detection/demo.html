@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS để tùy chỉnh cửa sổ phụ */
+    #popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Nút mở cửa sổ phụ -->
+  <button onclick="openPopup()">Mở cửa sổ phụ</button>
+
+  <!-- Cửa sổ phụ -->
+  <div id="popup" style="display: none;">
+    <h1>Nhập các giá trị</h1>
+    <form>
+      <table width="100%">
+        <tr width="50%">
+          <td width="50%">
+            <h3> Tọa độ camera 1 </h3><br>
+            <label for="x_coordinate_of_camera_1">Tọa độ X: </label>
+            <input type="number" id="x_coordinate_of_camera_1" name="x_coordinate_of_camera_1" step="any" required><span> mét</span><br><br>
+
+            <label for="y_coordinate_of_camera_1">Tọa độ Y: </label>
+            <input type="number" id="y_coordinate_of_camera_1" name="y_coordinate_of_camera_1" step="any" required><span> mét</span><br><br>
+
+            <label for="z_coordinate_of_camera_1">Tọa độ Z: </label>
+            <input type="number" id="z_coordinate_of_camera_1" name="z_coordinate_of_camera_1" step="any" required><span> mét</span><br><br>
+
+            <h3> Góc camera 1 </h3><br>
+            <label for="theta_angle_of_camera_1">Góc nâng:</label>
+            <input type="number" id="theta_angle_of_camera_1" name="theta_angle_of_camera_1" step="any" required><span>°</span><br><br>
+
+            <label for="phi_angle_of_camera_1">Góc phương vị:</label>
+            <input type="number" id="phi_angle_of_camera_1" name="phi_angle_of_camera_1" step="any" required><span>°</span><br><br>
+          </td>
+          <td>
+            <h3> Tọa độ camera 2 </h3><br>
+            <label for="x_coordinate_of_camera_2">Tọa độ X: </label>
+            <input type="number" id="x_coordinate_of_camera_2" name="x_coordinate_of_camera_2" step="any" required><span> mét</span><br><br>
+
+            <label for="y_coordinate_of_camera_2">Tọa độ Y: </label>
+            <input type="number" id="y_coordinate_of_camera_2" name="y_coordinate_of_camera_2" step="any" required><span> mét</span><br><br>
+
+            <label for="z_coordinate_of_camera_2">Tọa độ Z: </label>
+            <input type="number" id="z_coordinate_of_camera_2" name="z_coordinate_of_camera_2" step="any" required><span> mét</span><br><br>
+
+            <h3> Góc camera 2 </h3><br>
+            <label for="theta_angle_of_camera_1">Góc nâng:</label>
+            <input type="number" id="theta_angle_of_camera_2" name="theta_angle_of_camera_2" step="any" required><span>°</span><br><br>
+
+            <label for="phi_angle_of_camera_1">Góc phương vị:</label>
+            <input type="number" id="phi_angle_of_camera_2" name="phi_angle_of_camera_2" style="width: 127px;" step="any" required><span>°</span><br><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h3> Tọa độ Jammer </h3><br>
+            <label for="x_coordinate_of_jammer">Tọa độ X: </label>
+            <input type="number" id="x_coordinate_of_jammer" name="x_coordinate_of_jammer" step="any" required><span> mét</span><br><br>
+
+            <label for="y_coordinate_of_jammer">Tọa độ Y: </label>
+            <input type="number" id="y_coordinate_of_jammer" name="y_coordinate_of_jammer" step="any" required><span> mét</span><br><br>
+
+            <label for="z_coordinate_of_jammer">Tọa độ Z: </label>
+            <input type="number" id="z_coordinate_of_jammer" name="z_coordinate_of_jammer" step="any" required><span> mét</span><br><br>
+          </td>
+          <td>
+            <label for="threshold_predict">Độ nhạy phát hiện:</label>
+            <input type="number" id="threshold_predict" name="threshold_predict"><br><br>
+
+            <label for="goc_camera">Góc rộng camera:</label>
+            <input type="number" id="goc_camera" name="goc_camera" step="any" required><span></span><br>°<br>
+          </td>
+        </tr>
+      </table>
+      <button type="button" onclick="closePopup()">Lưu</button>
+    </form>
+  </div>
+
+  <script>
+    // Hàm mở cửa sổ phụ
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    // Hàm đóng cửa sổ phụ
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+</body>
+</html>
