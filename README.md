@@ -30,5 +30,11 @@ The idea is to build a system capable of detecting drones through images from tw
 
 ## My system
 ![Alt text](/image2.png)
-## My method of conducting experiments
+1. Two cameras with the same structure and technical specifications are placed 50cm apart. Both can rotate 360 degrees.
+2. A Wi-Fi router is used to connect communication between devices via a local network (Local Network Area - LAN).
+3. The processor in the jammer here uses the ESP8266 NodeMCU Lua V3 CH340. This hardware makes it possible for the jammer to communicate through wifi and handle tasks within the device.
+4. Nuand's BladeRF kit is used to collect the signal emitted from the drone, generate the jamming signal, and transmit it to the antenna.
+5. Two servos are connected together. One horizontal servo and one vertical servo direct the antenna to transmit the interfering signal to the drone location.
+6. Directional antenna to transmit jamming signals
+## The results I achieved
 ![Alt text](/image3.png)
